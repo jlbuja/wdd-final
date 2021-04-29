@@ -1,0 +1,151 @@
+/* #loading-contents {
+    display: flex;
+    flex-direction: column;
+} */
+
+body {
+    background: #003049;
+}
+
+#loading-screen {
+    display: block;
+}
+
+#chicks {
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+}
+
+#loading-text {
+    display: flex;
+    justify-content: center;
+}
+
+.chick {
+    width: 93px;
+    height: 93px;
+    margin-left: 10px;
+    animation-name: wave;
+	animation-duration: 2s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+}
+
+.second {
+	animation-delay: .25s;
+}
+
+.third {
+	animation-delay: .5s;
+}
+
+@keyframes wave {
+	0% {transform: translate(0, 0px);}
+	50% {transform: translate(0, -40px);}
+	100% {transform: translate(0, 0px);}
+}
+
+h3 {
+    font-family: 'Baloo 2', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#swipe-screen {
+    display: none;
+}
+
+#display-photo-frame {
+    width: 824.18px;
+    height: 466px;
+    border-radius: 106px;
+    position: relative;
+}
+
+#display-photo-frame::after {
+    content: "";
+    background: url('../images/sliver.jpg');
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.8;
+    border-radius: 106px;
+    position: absolute;
+    z-index: -1; 
+    overflow: hidden;
+}
+
+#left {
+    background: rgba(223, 83, 83, 0.8);
+    border-radius: 100%;
+    padding: 30px;
+    width: 155px;
+    height: 155px;
+}
+
+#left:hover {
+    background: rgba(223, 83, 83);
+}
+
+#right {
+    background: rgba(116, 156, 117, 0.8);
+    border-radius: 100%;
+    padding: 30px;
+    width: 155px;
+    height: 155px;
+}
+
+#right:hover {
+    background: rgba(116, 156, 117);
+}
+
+.swipe {
+    margin-top: 120px;
+}
+
+header {
+    font-family: 'Baloo 2', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 125px;
+    text-align: center;
+    color: #FFDC64;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 106px;
+    margin: 10px;
+}
+
+#photo-and-selection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.extra-info {
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 100%;
+    margin-top: 10px;
+    padding: 30px;
+    width: 125px;
+    height: 125px;
+}
+
+.button:hover {
+    background: rgba(255, 255, 255);
+}
+

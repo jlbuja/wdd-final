@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swipe</title>
+    <link rel="stylesheet" href="assets/style/swipe.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+</head>
+<body onload="setTimeout(finishLoading, 3000)">
+    <div id="loading-screen">
+        <div id="loading-contents">
+            <div id="chicks">
+                <img class="first chick" src="assets/images/chick.png" alt="">
+                <img class="second chick" src="assets/images/chick.png" alt="">
+                <img class="third chick" src="assets/images/chick.png" alt="">
+            </div>
+            <div id="loading-text">
+                <h3>loading restaurants...</h3>
+            </div>
+        </div>
+    </div>
+    <div id="swipe-screen">
+        <header>Sliver Pizzeria</header>
+        <div id="photo-and-selection">
+            <img id="left" class="swipe" src="assets/images/x-mark.png" alt="">
+            <div id="display-photo-frame"></div>
+            <img id="right" class="swipe" src="assets/images/check-mark.png" alt="">
+        </div>
+        <div id="links">
+            <a href="https://www.yelp.com/biz/sliver-pizzeria-berkeley-4"><img class="extra-info button" src="assets/images/yelp (1).png" alt=""></a>
+            <a href="https://www.yelp.com/map/sliver-pizzeria-berkeley-4"><img class="extra-info button" src="assets/images/map.png" alt=""></a>
+        </div>
+    </div>
+
+    <script src="assets/scripts/swipe.js"></script>
+</body>
+</html>

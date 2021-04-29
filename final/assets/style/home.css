@@ -1,0 +1,120 @@
+body {
+    background-color: #003049;
+    background-size: cover;
+    background-position-y: -600px;
+    height: 100%
+}
+
+body::after {
+    content: "";
+    background: url('../images/takeout.jpg');
+    background-size: cover;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#options{
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 106px;
+    width: 586px;
+}
+
+#steps {
+    position: absolute;
+    z-index: 9;
+    left: 150px;
+}
+
+#numbers {
+    position: relative;
+    margin-top: 155px;
+    left: 80px;
+}
+
+#two {
+    margin-left: 150px;
+}
+
+#three {
+    margin-left: 310px;
+}
+
+
+.select {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Text styles */
+header {
+    font-family: 'Baloo 2', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 151px;
+    text-align: center;
+    color: #FFDC64;
+}
+
+h1 {
+    font-family: 'Baloo 2', cursive;
+    font-style: normal;
+    font-weight: normal;
+    margin: 20px;
+    font-size: 72px;
+    text-align: center;
+    color: #003049;
+}
+
+h2 {
+    font-family: 'Baloo 2', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 76px;
+    text-align: center;
+    color: #003049;
+    margin: 30px;
+}
+
+h3 {
+    font-family: 'Baloo 2', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 76px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #003049;
+    border-radius: 106px;
+    margin: 50px;
+}
+
+h3:hover {
+    color: #FFDC64;
+}
+
+h4 {
+    font-family: 'Baloo 2', cursive;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 100px;
+    font-size: 144px;
+    color: #FFDC64;
+    opacity: 0.7;
+    margin: 5px;
+}
